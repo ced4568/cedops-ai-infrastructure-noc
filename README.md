@@ -1,5 +1,12 @@
 # 🚀 CedOps — AI Infrastructure Operations NOC
 
+![Grafana](https://img.shields.io/badge/Grafana-Dashboard-orange)
+![Prometheus](https://img.shields.io/badge/Prometheus-Monitoring-red)
+![Docker](https://img.shields.io/badge/Docker-Containers-blue)
+![Tailscale](https://img.shields.io/badge/Tailscale-ZeroTrust-purple)
+![Proxmox](https://img.shields.io/badge/Proxmox-Virtualization-orange)
+![Platform Engineering](https://img.shields.io/badge/Focus-Platform%20Engineering-green)
+
 ![Dashboard](docs/screenshots/dashboard_v1.png)
 
 ## Overview
