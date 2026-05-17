@@ -16,7 +16,7 @@
 
 ### V2 — Current
 
-[![CedOps NOC Dashboard V2](docs/screenshots/dashboard_V2.png)](docs/screenshots/dashboard_V2.png)
+[![CedOps NOC Dashboard V2](docs/screenshots/dashboard_v2.png)](docs/screenshots/dashboard_v2.png)
 
 ### V1
 
