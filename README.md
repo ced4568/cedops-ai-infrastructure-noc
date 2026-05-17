@@ -16,11 +16,11 @@
 
 ### V2 — Current
 
-[![CedOps NOC Dashboard V2](docs/screenshots/dashboard_v2.png)](docs/screenshots/dashboard_v2.png)
+[![CedOps NOC Dashboard V2](docs/screenshots/dashboard_V2.png)](docs/screenshots/dashboard_V2.png)
 
 ### V1
 
-[![CedOps NOC Dashboard V1](docs/screenshots/dashboard_v1.png)](docs/screenshots/dashboard_v1.png)
+[![CedOps NOC Dashboard V1](docs/screenshots/dashboard_V1.png)](docs/screenshots/dashboard_V1.png)
 
 > **Live:** All 5 public services reporting UP · NOC Health Score 100% · VPS Disk 27% · Prometheus scraping every 30s
 
