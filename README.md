@@ -7,7 +7,7 @@
 ![Proxmox](https://img.shields.io/badge/Proxmox-Virtualization-orange)
 ![Platform Engineering](https://img.shields.io/badge/Focus-Platform%20Engineering-green)
 
-![Dashboard](docs/screenshots/dashboard_v1.png)
+![Dashboard V1](docs/screenshots/dashboard_v1.png)
 
 ## Overview
 
