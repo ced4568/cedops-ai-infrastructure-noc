@@ -7,9 +7,7 @@
 ![Proxmox](https://img.shields.io/badge/Proxmox-Virtualization-orange)
 ![Platform Engineering](https://img.shields.io/badge/Focus-Platform%20Engineering-green)
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ced4568/cedops-ai-infrastructure-noc/main/docs/screenshots/dashboard_v1.png" alt="CedOps AI Infrastructure NOC Dashboard" width="100%">
-</p>
+![CedOps Dashboard](https://raw.githubusercontent.com/ced4568/cedops-ai-infrastructure-noc/main/docs/screenshots/dashboard_v1.png)
 
 ## Overview
 
