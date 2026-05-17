@@ -1,0 +1,11 @@
+.env
+*.env
+secrets/
+private/
+*.key
+*.pem
+*.crt
+*.log
+tokens.txt
+credentials.yml
+credentials.yaml
