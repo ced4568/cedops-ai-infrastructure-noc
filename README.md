@@ -209,7 +209,7 @@ CedOps is designed with **zero public infrastructure exposure**.
 | Private metrics pipeline | Prometheus → Tailscale → VPS; never public                  |
 | SSL everywhere           | NPM handles termination for all services                    |
 | Container isolation      | Docker network segmentation via Portainer                   |
-| Secret management        | No secrets in this repo — handled via environment variables |
+| Secret management        | No secrets in this repo handled via environment variables |
 
 ---
 
