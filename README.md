@@ -1,22 +1,22 @@
-# 🤖 CedOps — AI Infrastructure Operations NOC
+# 🤖 CedOps AI Infrastructure Operations NOC
 
-> A live AI operations platform running on Hetzner VPS — 8 autonomous agents orchestrated by Paperclip, monitored in real-time by Prometheus (hosted on Proxmox homelab) scraping over Tailscale, visualized in a Grafana NOC dashboard.
+> A live AI operations platform running on Hetzner VPS 8 autonomous agents orchestrated by Paperclip, monitored in real time by Prometheus (hosted on Proxmox homelab) scraping over Tailscale, visualized in a Grafana NOC dashboard.
 
 [![Live NOC](https://img.shields.io/badge/Live%20NOC-noc.chasedumphord.com-1D9E75?style=flat-square)](https://noc.chasedumphord.com)
 [![Paperclip](https://img.shields.io/badge/Paperclip-AI%20Agent%20Platform-6B46C1?style=flat-square)](https://paperclip.synthossystems.com)
 [![Synthos Systems](https://img.shields.io/badge/Synthos%20Systems-synthossystems.com-0EA5E9?style=flat-square)](https://synthossystems.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-chasedumphord.com-0F6E56?style=flat-square)](https://chasedumphord.com)
-[![Agents](https://img.shields.io/badge/AI%20Agents-8%20Active-orange?style=flat-square)](#-ai-agent-roster)
-[![Platform](https://img.shields.io/badge/Platform-Hetzner%20VPS-D4001A?style=flat-square)](#️-infrastructure-layer)
-[![Monitoring](https://img.shields.io/badge/Monitoring-Prometheus%20%2B%20Grafana-F46800?style=flat-square)](#-observability--noc)
+[![Agents](https://img.shields.io/badge/AI%20Agents-8%20Active-orange?style=flat-square)](#ai-agent-roster)
+[![Platform](https://img.shields.io/badge/Platform-Hetzner%20VPS-D4001A?style=flat-square)](#infrastructure-layer)
+[![Monitoring](https://img.shields.io/badge/Monitoring-Prometheus%20%2B%20Grafana-F46800?style=flat-square)](#observability--noc)
 
 ---
 
-## 📸 NOC Dashboard
+## NOC Dashboard
 
-CedOps dashboards are intentionally versioned to demonstrate increasing operational maturity — from foundational observability to SRE-style incident response and reliability engineering.
+CedOps dashboards are intentionally versioned to demonstrate increasing operational maturity from foundational observability to SRE style incident response and reliability engineering.
 
-### V3 — Current (SRE / Incident Response)
+### V3  Current (SRE / Incident Response)
 
 [![CedOps NOC Dashboard V3](docs/screenshots/dashboard_v3-overview.png)](docs/screenshots/dashboard_v3-overview.png)
 
@@ -30,13 +30,13 @@ CedOps dashboards are intentionally versioned to demonstrate increasing operatio
 
 ---
 
-### V2 — Operational Reliability
+### V2  Operational Reliability
 
 [![CedOps NOC Dashboard V2](docs/screenshots/dashboard_v2.png)](docs/screenshots/dashboard_v2.png)
 
 ---
 
-### V1 — Foundational Observability
+### V1  Foundational Observability
 
 [![CedOps NOC Dashboard V1](docs/screenshots/dashboard_v1.png)](docs/screenshots/dashboard_v1.png)
 
@@ -44,11 +44,11 @@ CedOps dashboards are intentionally versioned to demonstrate increasing operatio
 
 ---
 
-## 🧭 Overview
+## Overview
 
-CedOps is a **production-style AI operations platform** built to simulate a real-world Platform Engineering and AI Infrastructure environment.
+CedOps is a **production-style AI operations platform** built to simulate a real world Platform Engineering and AI Infrastructure environment.
 
-The VPS stack runs on Hetzner and is monitored by Prometheus hosted on a Proxmox homelab node, communicating over a private Tailscale network — with everything visualized in a live Grafana NOC dashboard.
+The VPS stack runs on Hetzner and is monitored by Prometheus hosted on a Proxmox homelab node, communicating over a private Tailscale network with everything visualized in a live Grafana NOC dashboard.
 
 The platform combines:
 
@@ -63,7 +63,7 @@ The platform combines:
 
 ---
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 ```text
                         Internet
@@ -117,9 +117,9 @@ The platform combines:
 
 ---
 
-## 🤖 AI Agent Roster
+## AI Agent Roster
 
-All agents run inside **Paperclip** — the AI Agent Orchestration Platform at `paperclip.synthossystems.com`.
+All agents run inside **Paperclip**  the AI Agent Orchestration Platform at `paperclip.synthossystems.com`.
 
 | Agent                   | Role                                                                   | Status |
 | ----------------------- | ---------------------------------------------------------------------- | ------ |
@@ -132,11 +132,11 @@ All agents run inside **Paperclip** — the AI Agent Orchestration Platform at `
 | **Research**            | Market research and intelligence gathering                             | ✅ Live |
 | **Sales Agent**         | Lead qualification and outreach                                        | ✅ Live |
 
-> **Suge** serves dual duty — the primary Hermes-style ops agent inside Paperclip, and the external-facing **SugeBot** on Telegram for real-time operational commands.
+> **Suge** serves dual duty the primary Hermes style ops agent inside Paperclip, and the external-facing **SugeBot** on Telegram for real-time operational commands.
 
 ---
 
-## 🖥️ Infrastructure Layer
+## Infrastructure Layer
 
 All services run on a **Hetzner VPS** (`synthos-node-1`) behind Cloudflare Tunnels with zero exposed ports.
 
@@ -156,25 +156,25 @@ Internet → Cloudflare Edge → Tunnel → Nginx Proxy Manager → Docker Servi
 
 ---
 
-## 📊 Observability & NOC
+## Observability & NOC
 
-Prometheus runs on the **Proxmox homelab** and scrapes the Hetzner VPS over a **Tailscale private tunnel** — keeping metrics collection completely off the public internet.
+Prometheus runs on the **Proxmox homelab** and scrapes the Hetzner VPS over a **Tailscale private tunnel** keeping metrics collection completely off the public internet.
 
 Grafana visualizes everything in the live NOC dashboard.
 
 ### Executive Health Panel
 
-* **Synthos VPS Status** — UP/DOWN state with instant alerting
-* **Public Services Up** — count of healthy endpoints (target: 5/5)
-* **NOC Health Score** — composite platform health percentage
-* **VPS Uptime** — continuous uptime tracking in days
+* **Synthos VPS Status**  UP/DOWN state with instant alerting
+* **Public Services Up**  count of healthy endpoints (target: 5/5)
+* **NOC Health Score**  composite platform health percentage
+* **VPS Uptime**  continuous uptime tracking in days
 
 ### VPS Resource Health
 
-* CPU Usage % — `synthos-node-1` CPU time series
-* Memory Utilization % — real-time memory pressure
-* Disk Used % — infrastructure capacity monitoring
-* Network Traffic — RX/TX bandwidth graphs (30s refresh)
+* CPU Usage %  `synthos-node-1` CPU time series
+* Memory Utilization %  real-time memory pressure
+* Disk Used %  infrastructure capacity monitoring
+* Network Traffic RX/TX bandwidth graphs (30s refresh)
 
 ### Public Service Availability
 
@@ -199,7 +199,7 @@ Tracked via **Blackbox Exporter** HTTP probes.
 
 ---
 
-## 🔒 Security Architecture
+## Security Architecture
 
 CedOps is designed with **zero public infrastructure exposure**.
 
@@ -213,7 +213,7 @@ CedOps is designed with **zero public infrastructure exposure**.
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 cedops-ai-infrastructure-noc/
@@ -247,7 +247,7 @@ cedops-ai-infrastructure-noc/
 
 ---
 
-## 🛠️ Stack
+## Stack
 
 | Layer                | Technology                                     |
 | -------------------- | ---------------------------------------------- |
@@ -266,7 +266,7 @@ cedops-ai-infrastructure-noc/
 
 ---
 
-## ✅ What's Built
+## What's Built
 
 ### V1 Dashboard — Foundational Observability
 
@@ -301,7 +301,7 @@ cedops-ai-infrastructure-noc/
 
 ---
 
-## 🔮 Roadmap
+## Roadmap
 
 ### V4 — AI-Assisted Operations
 
@@ -316,23 +316,23 @@ cedops-ai-infrastructure-noc/
 
 ---
 
-## 👤 Author
+## Author
 
 **Chase Dumphord**
-Digital Systems Engineer | Platform Engineering | AI Infrastructure | Observability
+DevOps and Cloud Infrastructure Engineer | Platform Engineering | AI Infrastructure | Observability
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-chase--dumphord-0A66C2?style=flat-square)](https://www.linkedin.com/in/toochase-dumphord/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-chase--dumphord-0A66C2?style=flat-square)](https://www.linkedin.com/in/chase-dumphord/)
 [![GitHub](https://img.shields.io/badge/GitHub-ced4568-181717?style=flat-square)](https://github.com/ced4568)
 [![Live NOC](https://img.shields.io/badge/Live%20NOC-noc.chasedumphord.com-1D9E75?style=flat-square)](https://noc.chasedumphord.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-chasedumphord.com-0F6E56?style=flat-square)](https://chasedumphord.com)
 
 ---
 
-## 🔗 Related Repos
+## Related Repos
 
 | Repo                                                          | Description                                                        |
 | ------------------------------------------------------------- | ------------------------------------------------------------------ |
-| [ceds-homelab](https://github.com/ced4568/ceds-homelab)       | 6-node Proxmox cluster + 12-node K3s + full homelab infrastructure |
-| [ced-k3s-homelab](https://github.com/ced4568/ced-k3s-homelab) | 12-node Raspberry Pi K3s cluster detail                            |
-| [ceds-observability-stack](https://github.com/ced4568)        | Observability stack configs and dashboards                         |
+| [ceds-homelab](https://github.com/ced4568/ceds-homelab)       | 6 node Proxmox cluster + 12 node K3s + full homelab infrastructure |
+| [ced-k3s-homelab](https://github.com/ced4568/ced-k3s-homelab) | 12 node Raspberry Pi K3s cluster detail                            |
+| [ceds-observability-stack](https://github.com/ced4568/ceds-observability-stack) | Observability stack configs and dashboards          |
 | [ceds-noc](https://github.com/ced4568/ceds-noc)               | Custom-built public NOC status page                                |
